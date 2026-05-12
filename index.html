@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>CypherWave | MOBO</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ICONS -->
+  <script
+    src="https://kit.fontawesome.com/5073523fa9.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- FONT -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+  <!-- carrosselFotos -->
+
+<script>
+let index = 0;
+
+function moveSlide(step) {
+  const track = document.querySelector(".carousel-track");
+  const items = document.querySelectorAll(".carousel-item");
+
+  index += step;
+
+  if (index < 0) index = items.length - 1;
+  if (index >= items.length) index = 0;
+
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
+</script>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="nav">
+
+    <a href="/" class="logo">
+      <img src="img/logoCypher.png" alt="logo" />
+    </a>
+
+    <ul class="nav-list">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#services">Tecnologias</a></li>
+      <li><a href="#about">Projeto</a></li>
+      <li><a href="#team">Equipe</a></li>
+    </ul>
+
+    <a href="#about" class="nav-btn">Conheça o MOBO</a>
+
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <div class="hero-text">
+
+        <span class="mini-title">
+          CYBERWAVE • INOVAÇÃO • IOT
+        </span>
+
+        <h1>
+          Tecnologia inteligente para revolucionar o
+          <span>agronegócio</span>
+        </h1>
+
+        <p>
+          Desenvolvemos soluções tecnológicas utilizando IoT,
+          automação e monitoramento inteligente para otimizar
+          a colheita de lichias no Vale do Ribeira.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#about" class="btn-primary">
+            Explorar Projeto
+          </a>
+
+          <a href="#team" class="btn-secondary">
+            Nossa Equipe
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hero-image">
+        <img src="img/mobo_pic/banner.png" alt="Projeto MOBO" />
+      </div>
+
+    </div>
+
+   <!-- TRUST -->
+<div class="trusted-box">
+
+  <a href="Oracle.html" class="trusted-item">
+    <h2>1º Lugar</h2>
+    <p>Oracle Apex Challenge</p>
+  </a>
+
+  <a href="FTX25.html" class="trusted-item">
+    <h2>FTX'25</h2>
+    <p>Projeto Exposto</p>
+  </a>
+
+  <a href="hubtec.html" class="trusted-item">
+    <h2>HUBTEC'25</h2>
+    <p>Projeto Exposto</p>
+  </a>
+
+</div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+
+    <div class="section-title">
+      <span>TECNOLOGIAS</span>
+      <h2>Funcionalidades Inteligentes do MOBO</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+
+        <img src="img/card_methods/planta.png" alt="" />
+
+        <h3>Colheita Sustentável</h3>
+
+        <p>
+          Coleta mais eficiente e cuidadosa, preservando a qualidade da produção.
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <img src="img/card_methods/visao.png" alt="" />
+
+        <h3>Visão Computacional</h3>
+
+        <p>
+          O sistema analisa a maturidade das lichias para
+          identificar o momento ideal da colheita.
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <img src="img/card_methods/bracomecanico.png" alt="" />
+
+        <h3>Automação IoT</h3>
+
+        <p>
+          Integração entre Arduino, sensores e braço
+          mecânico para otimizar processos agrícolas.
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <img src="img/card_methods/lamp.png" alt="" />
+
+        <h3>Dashboard Inteligente</h3>
+
+        <p>
+          Relatórios e gráficos em tempo real auxiliam no
+          controle e previsão da produção.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="about-content">
+
+      <div class="about-left">
+
+        <span>PROJETO MOBO</span>
+
+        <h2>
+          Tecnologia aplicada ao futuro do agronegócio
+        </h2>
+
+        <p>
+          O MOBO é um sistema de colheita inteligente
+          desenvolvido pela equipe CypherWave utilizando
+          IoT, automação e análise de dados para tornar o
+          processo agrícola mais eficiente, tecnológico
+          e sustentável.
+        </p>
+
+        <div class="about-list">
+
+          <div class="about-item">
+            <i class="fa-solid fa-leaf"></i>
+            <p>Colheita Sustentável</p>
+          </div>
+
+          <div class="about-item">
+            <i class="fa-solid fa-robot"></i>
+            <p>Braço Mecânico Automatizado</p>
+          </div>
+
+          <div class="about-item">
+            <i class="fa-solid fa-chart-pie"></i>
+            <p>Dashboard Analítica</p>
+          </div>
+
+          <div class="about-item">
+            <i class="fa-solid fa-seedling"></i>
+            <p>Previsão de Colheita</p>
+          </div>
+
+        </div>
+
+      </div>
+
+  <div class="about-right">
+
+  <div class="carousel">
+
+    <div class="carousel-track">
+
+      <img src="img/ftEquipe.jpeg" class="carousel-item active" alt="MOBO 1">
+      <img src="img/ftEquipe2.jpeg" class="carousel-item" alt="MOBO 2">
+      <img src="img/ftEquipe3.jpeg" class="carousel-item" alt="MOBO 3">
+      <img src="img/ftEquipe4.jpeg" class="carousel-item" alt="MOBO 4">
+      <img src="img/ftEquipe5.jpeg" class="carousel-item" alt="MOBO 5">
+
+    </div>
+
+    <button class="carousel-btn prev" onclick="moveSlide(-1)">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <button class="carousel-btn next" onclick="moveSlide(1)">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+  </div>
+
+</div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EQUIPE -->
+  <section class="pricing" id="team">
+
+    <div class="section-title">
+      <span>CYBERWAVE</span>
+      <h2>Nossa Equipe</h2>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- CARD 1 -->
+      <div class="price-card featured">
+
+        <div class="tag">INTEGRANTE:</div>
+
+        <h3>Bárbara Vitória</h3>
+
+        <h1>Ux & Front-End</h1>
+
+        <p>
+          Design de experiência do usuário, desenvolvimento front-end, 
+          criação de interfaces intuitivas e produção de vídeos.
+        </p>
+
+        <div class="member-role">
+
+        <img
+          src="img/card_integrantes/perfilBarbara.png"
+          alt="Bárbara Vitória"
+        />
+
+        <div class="social-links">
+
+          <a href="https://www.linkedin.com/in/babi-santos-2110bb24a/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/babi-s4ntos" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.behance.net/barbarasantos58" target="_blank">
+            <i class="fa-brands fa-behance"></i>
+          </a>
+
+        </div>
+
+</div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="price-card featured">
+
+        <div class="tag">INTEGRANTE:</div>
+
+        <h3>Jaquelaine Ramos</h3>
+
+        <h1>Mobile & IA</h1>
+
+        <p>
+            Suporte no desenvolvimento mobile, integração de soluções
+            e treinamento de modelos de IA do projeto.
+        </p>
+
+        <div class="member-role">
+
+          <img
+            src="img/card_integrantes/perfilJaque.png"
+            alt="Pedro Henrique"
+          />
+
+         <div class="social-links">
+
+          <a href="https://www.linkedin.com/in/jaquelaine-ramos/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/jk-ramos" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+        </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="price-card featured">
+
+        <div class="tag">INTEGRANTE:</div>
+
+        <h3>Lucas de Lima</h3>
+
+        <h1>IoT & Mobile</h1>
+
+        <p>
+          Integração de soluções IoT, suporte no desenvolvimento mobile e treinamento de
+           modelos de IA do projeto.
+        </p>
+
+        <div class="member-role">
+
+          <img
+            src="img/card_integrantes/perfilLucas.png"
+            alt="Pedro Henrique"
+          />
+
+           <div class="social-links">
+
+          <a href="https://www.linkedin.com/in/lucaslisan" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/LucasLiSan/" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+        </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+     <div class="price-card featured">
+
+        <div class="tag">INTEGRANTE:</div>
+
+        <h3>Pedro Henrique</h3>
+
+        <h1>Back-End & Cloud</h1>
+
+        <p>
+         Desenvolvimento back-end, integração de sistemas, gerenciamento de banco de dados e
+         hospedagem em nuvem.
+        </p>
+
+        <div class="member-role">
+
+          <img
+            src="img/card_integrantes/perfilPedro.png"
+            alt="Pedro Henrique"
+          />
+
+        <div class="social-links">
+
+          <a href=" https://www.linkedin.com/in/pedro-henrique-venancio/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href=" https://www.github.com/phvenancio" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+        </div>
+
+        </div>
+
+      </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <img src="img/logoCypher.png" alt="logo" />
+
+    <p>
+      © 2026 CypherWave • Tecnologia e inovação para o agronegócio
+    </p>
+
+    
+
+  </footer>
+
+</body>
+</html>

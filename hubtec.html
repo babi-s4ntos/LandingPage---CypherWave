@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CypherWave | HUBTEC'25</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="https://kit.fontawesome.com/5073523fa9.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<!-- carrossel HUBTEC25 -->
+<script>
+let indexWide = 0;
+
+function moveSlideWide(step) {
+  const track = document.querySelector(".carousel-wide-track");
+  const items = document.querySelectorAll(".carousel-wide-item");
+
+  indexWide += step;
+
+  if (indexWide < 0) {
+    indexWide = items.length - 1;
+  } else if (indexWide >= items.length) {
+    indexWide = 0;
+  }
+
+  track.style.transform = `translateX(-${indexWide * 100}%)`;
+}
+</script>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+
+    <a href="index.html" class="logo">
+      <img src="img/logoCypher.png" alt="logo" />
+    </a>
+
+    <ul class="nav-list">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="index.html#about">Projeto</a></li>
+      <li><a href="index.html#team">Equipe</a></li>
+    </ul>
+
+    <a href="index.html" class="nav-btn">Voltar</a>
+
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="hero-text">
+
+        <span class="mini-title">
+          HUBTEC'25 • EXPOSIÇÃO TECNOLÓGICA
+        </span>
+
+        <h1>
+          Projeto apresentado na <span>HUBTEC'25</span>
+        </h1>
+
+        <p>
+            O projeto MOBO foi apresentado na HUBTEC’25, um evento marcado por inovação, tecnologia e troca de conhecimento. 
+            A feira reuniu diversos projetos nas áreas de Inteligência Artificial, IoT, saúde, agronegócio e gamificação, proporcionando um ambiente de aprendizado e 
+            conexão entre estudantes e profissionais. Durante o evento, 
+            a equipe CypherWave teve a oportunidade de apresentar sua solução tecnológica aplicada ao agronegócio, compartilhar experiências e receber 
+            feedbacks importantes para o aprimoramento do projeto.
+        </p>
+
+      </div>
+
+      <div class="hero-image">
+        <img src="img/hubtec/banner.jpeg" alt="HUBTEC 2025" />
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DETALHES -->
+  <section class="about">
+
+    <div class="about-content">
+
+      <div class="about-left">
+
+        <span>EXPOSIÇÃO HUBTEC'25</span>
+
+        <h2>Inovação em destaque no evento</h2>
+
+        <p>
+          A participação na HUBTEC 2025 marcou um importante passo para a equipe CypherWave,
+          consolidando o MOBO como uma solução tecnológica aplicada ao agronegócio moderno.
+        </p>
+
+        <div class="about-list">
+
+          <div class="about-item">
+            <i class="fa-solid fa-star"></i>
+            <p>Projeto exposto ao público</p>
+          </div>
+
+          <div class="about-item">
+            <i class="fa-solid fa-microchip"></i>
+            <p>Demonstração de IoT</p>
+          </div>
+
+          <div class="about-item">
+            <i class="fa-solid fa-video"></i>
+            <p>Apresentação de Pitch</p>
+          </div>
+
+          <div class="about-item">
+            <i class="fa-solid fa-people-group"></i>
+            <p>Troca de conhecimento</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- POLAROID -->
+      <div class="about-right">
+
+        <div class="polaroid-section">
+
+          <div class="polaroid">
+            <img src="img/hubtec/gif1.gif" alt="Apresentação do MOBO">
+            <p></p>
+          </div>
+
+          <div class="polaroid rotate-right">
+            <img src="img/hubtec/gif2.gif" alt="Equipe CypherWave">
+            <p></p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- REGISTROS -->
+  <section class="testimonial">
+
+    <div class="section-title">
+      <span>REGISTROS</span>
+      <h2>Momentos da exposição</h2>
+    </div>
+
+    <div class="carousel-wide">
+
+      <div class="carousel-wide-track">
+
+        <img src="img/hubtec/img1.jpeg" class="carousel-wide-item" alt="hubtec 2">
+        <img src="img/hubtec/img2.jpeg" class="carousel-wide-item" alt="hubtec 3">
+        <img src="img/hubtec/img3.jpeg" class="carousel-wide-item" alt="hubtec 4">
+
+      </div>
+
+      <button class="carousel-wide-btn prev" onclick="moveSlideWide(-1)">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <button class="carousel-wide-btn next" onclick="moveSlideWide(1)">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <img src="img/logoCypher.png" alt="logo" />
+
+    <p>© 2026 CypherWave • HUBTEC 2025 Exhibition</p>
+
+   
+
+  </footer>
+
+</body>
+
+</html>

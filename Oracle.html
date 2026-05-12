@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CypherWave | Oracle Apex Challenge</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="https://kit.fontawesome.com/5073523fa9.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<!-- carrosselFotos -->
+<script>
+let indexWide = 0;
+
+function moveSlideWide(step) {
+  const track = document.querySelector(".carousel-wide-track");
+  const items = document.querySelectorAll(".carousel-wide-item");
+
+  indexWide += step;
+
+  if (indexWide < 0) indexWide = items.length - 1;
+  if (indexWide >= items.length) indexWide = 0;
+
+  track.style.transform = `translateX(-${indexWide * 100}%)`;
+}
+</script>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+
+    <a href="index.html" class="logo">
+      <img src="img/logoCypher.png" alt="logo" />
+    </a>
+
+    <ul class="nav-list">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="index.html#about">Projeto</a></li>
+      <li><a href="index.html#team">Equipe</a></li>
+    </ul>
+
+    <a href="index.html" class="nav-btn">Voltar</a>
+
+  </nav>
+
+  <!-- HERO DA PREMIAÇÃO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="hero-text">
+
+        <span class="mini-title">
+          ORACLE APEX • PREMIAÇÃO
+        </span>
+
+        <h1>
+          1º Lugar no <span>Oracle Apex Challenge</span>
+        </h1>
+
+        <p>
+          A equipe CypherWave conquistou o primeiro lugar no Oracle Apex Challenge com o projeto Mobo,
+          um sistema IoT desenvolvido para otimizar a colheita de lichia. O reconhecimento aconteceu após a apresentação
+          realizada na Casa Oracle, em São Paulo, onde especialistas da Oracle avaliaram os projetos desenvolvidos na plataforma
+          Oracle Apex, destacando o Mobo como o grande vencedor da competição. 🥇
+        </p>
+
+      </div>
+
+      <div class="hero-image">
+        <img src="img/oracle/imgBanner.png" alt="Premiação Oracle" />
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DETALHES -->
+  <section class="about">
+
+    <div class="about-content">
+
+      <div class="about-left">
+
+        <span>CONQUISTA HISTÓRICA</span>
+
+        <h2>Inovação reconhecida pela Oracle</h2>
+
+        <p>
+          O projeto MOBO foi destaque entre diversas equipes pela sua aplicação prática de IoT,
+          automação e análise de dados no agronegócio.
+        </p>
+
+        <div class="about-list">
+
+          <div class="about-item">
+            <i class="fa-solid fa-trophy"></i>
+            <p>1º Lugar na competição</p>
+          </div>
+
+          <div class="about-item">
+            <i class="fa-solid fa-code"></i>
+            <p>Uso da plataforma Oracle Apex</p>
+          </div>
+
+          <div class="about-item">
+            <i class="fa-solid fa-lightbulb"></i>
+            <p>Projeto inovador em IoT</p>
+          </div>
+
+          <div class="about-item">
+            <i class="fa-solid fa-users"></i>
+            <p>Equipe multidisciplinar</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- POLAROID -->
+      <div class="about-right">
+
+        <div class="polaroid-section">
+
+          <div class="polaroid">
+            <img src="img/oracle/img7.jpg" alt="Oracle 1">
+            <p>Certificado - Pedro Venâncio</p>
+          </div>
+
+          <div class="polaroid rotate-right">
+            <img src="img/oracle/img6.jpg" alt="Oracle 2">
+            <p>Certificado - Bárbara Vitória</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- IMPACTO -->
+<section class="testimonial">
+
+  <div class="section-title">
+    <span>REGISTROS</span>
+    <h2>Momentos da nossa conquista</h2>
+  </div>
+
+  <div class="carousel-wide">
+
+    <div class="carousel-wide-track">
+
+      <img src="img/oracle/img9.jpg" class="carousel-wide-item" alt="MOBO 1">
+      <img src="img/oracle/img3.jpg" class="carousel-wide-item" alt="MOBO 2">
+      <img src="img/oracle/img4.jpg" class="carousel-wide-item" alt="MOBO 3">
+      <img src="img/oracle/img5.jpg" class="carousel-wide-item" alt="MOBO 4">
+
+    </div>
+
+    <button class="carousel-wide-btn prev" onclick="moveSlideWide(-1)">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <button class="carousel-wide-btn next" onclick="moveSlideWide(1)">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+  </div>
+
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <img src="img/logoCypher.png" alt="logo" />
+
+    <p>© 2026 CypherWave • Oracle Apex Challenge Winner</p>
+
+   
+
+  </footer>
+
+</body>
+
+</html>
