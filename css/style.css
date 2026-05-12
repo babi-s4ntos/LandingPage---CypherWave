@@ -1168,6 +1168,52 @@ footer p {
     display: none;
   }
 
+  @media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 80px;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(7, 11, 29, 0.98);
+    backdrop-filter: blur(15px);
+
+    padding: 30px 0;
+
+    gap: 25px;
+    text-align: center;
+
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.4s ease;
+    z-index: 999;
+  }
+
+  .nav-list.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list li a {
+    font-size: 18px;
+    color: #cfd5ff;
+    display: block;
+    padding: 10px;
+  }
+}
   .hero {
     padding: 120px 20px 80px;
   }
@@ -1276,5 +1322,74 @@ footer p {
   .team-image img {
     width: 70px;
     height: 70px;
+  }
+}
+
+
+/* =========================
+   MENU HAMBURGUER
+========================= */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu-toggle span {
+  width: 28px;
+  height: 3px;
+  background: #48b2ff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* animação virar X */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* MENU MOBILE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 70px;
+    right: 0;
+
+    width: 100%;
+    flex-direction: column;
+
+    background: rgba(7, 11, 29, 0.95);
+    backdrop-filter: blur(12px);
+
+    gap: 25px;
+    padding: 30px 0;
+
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+
+    transition: 0.4s ease;
+  }
+
+  .nav-list.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
   }
 }

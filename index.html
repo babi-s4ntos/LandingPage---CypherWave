@@ -50,6 +50,12 @@ function moveSlide(step) {
       <img src="img/logoCypher.png" alt="logo" />
     </a>
 
+    <div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
     <ul class="nav-list">
       <li><a href="#home">Início</a></li>
       <li><a href="#services">Tecnologias</a></li>
@@ -443,5 +449,14 @@ function moveSlide(step) {
 
   </footer>
 
+  <script>
+  const toggle = document.getElementById("menu-toggle");
+  const navList = document.querySelector(".nav-list");
+
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+    navList.classList.toggle("active");
+  });
+</script>
 </body>
 </html>
