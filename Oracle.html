@@ -40,9 +40,16 @@ function moveSlideWide(step) {
       <img src="img/logoCypher.png" alt="logo" />
     </a>
 
+    
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <ul class="nav-list">
       <li><a href="index.html">Início</a></li>
-      <li><a href="index.html#about">Projeto</a></li>
+      <li><a href="https://babi-s4ntos.github.io/LandingPage---Mobo/">Projeto</a></li>
       <li><a href="index.html#team">Equipe</a></li>
     </ul>
 
@@ -189,6 +196,14 @@ function moveSlideWide(step) {
 
   </footer>
 
-</body>
+  <script>
+  const toggle = document.getElementById("menu-toggle");
+  const navList = document.querySelector(".nav-list");
 
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+    navList.classList.toggle("active");
+  });
+</script>
+</body>
 </html>
